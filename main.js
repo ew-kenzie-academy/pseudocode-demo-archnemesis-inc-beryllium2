@@ -1,10 +1,10 @@
 // To acquire all of the required data; to print stuff.
 
-// - get employee's name
+// - get employee's name; what is your quest?
 userName=prompt("What is your name?");
 
 // - get hours worked
-//   TODO:   get hours worked from HR database
+//   TODO: SELECT HOURSWORKED from HR-database where USERNAME=userName;
 hoursWorked=35;
 
 // - get the day of the week
@@ -12,20 +12,19 @@ day=new Date().toLocaleString('en-us', {  weekday: 'long' });
 
 // - case(weekday) -> day specific message
 switch (day){
-  case "Sunday":
+  case    "Sunday":    message="today is friday";
     break;
-  case "Monday":
+  case    "Monday":    message="today is friday";
     break;
-  case "Tuesday":
+  case   "Tuesday":    message="today is friday";
     break;
-  case "Wednesday":
+  case "Wednesday":    message="today is friday";
     break;
-  case "Thursday":
+  case  "Thursday":    message="today is friday";
     break;
-  case "Friday":
-    console.log("today is friday");
+  case    "Friday":    message="today is friday";
     break;
-  case "Saturday":
+  case  "Saturday":    message="today is friday";
     break;
 }
 
@@ -45,5 +44,8 @@ switch (day){
     *How to get the day of the week from the day number in JavaScript?*
     Do I care why it works? Plug and chug :P
     ~console.log(new Date().toLocaleString('en-us', {  weekday: 'long' }));~
+  + [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch][mdn::switch]]
+    *switch*
+    I wonder if I can't use it like a function and return the value of assignment
 */
 
