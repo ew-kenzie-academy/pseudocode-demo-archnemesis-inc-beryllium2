@@ -31,15 +31,16 @@
       break;
     case    "Friday":    message="Happy Friday";
       break;
-    case  "Saturday":    message="Its the last day of the week.";
+    case  "Saturday":    message="Are you supposed to be here today?";
       break;
   }
 
 // - if there is an impending holdiday, then alert about long weekend
 //     TODO: Actually determine whether this is the case.
+let secondMessage="";
   if(   (day === "Thursday" && thisFridayIsHoliday)
      || (day === "Friday"   && nextMondayIsHoliday)  )
-           secondMessage="There is an upcoming holiday. Its going to be a long weekend.";
+           secondMessage+="There is an upcoming holiday. Its going to be a long weekend.";
 
 // - if associate hours worked > 35 then warn about overtime
   if(hoursWorked>31)
@@ -48,7 +49,10 @@
             + " this week. Be cautious and Do not work overtime!");
 
 // - Print all messages with document.write
-  document.write(message + secondMessage );
+  document.write("<h3>Order of the Day</h3><br>"
+     + "Hello, " + userName + ".<br>"
+     + message
+     + secondMessage );
 
 // - MIME it up with HTML and CSS
 
