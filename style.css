@@ -1,3 +1,10 @@
-h2 {
-    color: grey;
+h3 {
+    color: blue;
+    background-color : lightpink
+}
+
+body {
+    border: green dashed; 
+    background-color : cyan;
+    border-style: dashed; 
 }

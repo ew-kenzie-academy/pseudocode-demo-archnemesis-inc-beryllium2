@@ -38,7 +38,7 @@
 
 // - if there is an impending holdiday, then alert about long weekend
 //     TODO: Actually determine whether this is the case.
-let secondMessage="";
+  let secondMessage="";
   if(   (day === "Thursday" && thisFridayIsHoliday)
      || (day === "Friday"   && nextMondayIsHoliday)  )
            secondMessage+="There is an upcoming holiday. Its going to be a long weekend.";
@@ -50,7 +50,7 @@ let secondMessage="";
             + " this week. Be cautious and Do not work overtime!");
 
 // - Print all messages with document.write
-  document.write("<h3>Order of the Day</h3><br>"
+  document.write("<h3>Messages of the Day</h3><br>"
      + "Hello, " + userName + ".<br>"
      + message + "<br>"
      + secondMessage );
