@@ -12,23 +12,22 @@ day=new Date().toLocaleString('en-us', {  weekday: 'long' });
 
 // - case(weekday) -> day specific message
 switch (day){
-  case    "Sunday":    message="today is friday";
+  case    "Sunday":    message="Do not work today :P";
     break;
-  case    "Monday":    message="today is friday";
+  case    "Monday":    message="Sounds like somebody's got a case of the Mondays";
     break;
-  case   "Tuesday":    message="today is friday";
+  case   "Tuesday":    message="Ruby Tuesday isn't good anymore";
     break;
-  case "Wednesday":    message="today is friday";
+  case "Wednesday":    message="Median day";
     break;
-  case  "Thursday":    message="today is friday";
+  case  "Thursday":    message="Its almost Friday";
     break;
-  case    "Friday":    message="today is friday";
+  case    "Friday":    message="Happy friday";
     break;
-  case  "Saturday":    message="today is friday";
+  case  "Saturday":    message="Its the last day of the week.";
     break;
 }
 
-// - get booleans for... is Friday holiday? is Monday holiday?
 // - if it is thursday and Friday is a holiday
 //   or today is friday and Monday is holiday
 //     then alert about long weekend
