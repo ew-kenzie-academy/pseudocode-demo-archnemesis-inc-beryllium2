@@ -1,6 +1,7 @@
 // To acquire all of the required data; to print stuff.
 
 // - get employee's name; what is your quest?
+//    TODO: implment logging in using LDAP
   userName=prompt("What is your name?");
 
 // - get hours worked
@@ -51,7 +52,7 @@ let secondMessage="";
 // - Print all messages with document.write
   document.write("<h3>Order of the Day</h3><br>"
      + "Hello, " + userName + ".<br>"
-     + message
+     + message + "<br>"
      + secondMessage );
 
 // - MIME it up with HTML and CSS
@@ -80,9 +81,15 @@ let secondMessage="";
     | Columbus Day                        | Monday   | October 11th, 2021  |
     | Veterans Day                        | Thursday | November 11th, 2021 |
     | Thanksgiving Day                    | Thursday | November 25th, 2021 |
-    | Christmas Day                       | Friday   | December 24th, 2021 |
+    | Christmas Day †                     | Friday   | December 24th, 2021 |
     |-------------------------------------+----------+---------------------|
     #+end_text
-    
+  + [[https://en.wikipedia.org/wiki/Box-Muller][wiki::Box-Muller]] *Box–Muller transform*
+    No built-in probability functions :/ I would have to make my own, practically.
+    #+begin_src javascript
+    u1=Math.random();u2=Math.random();
+    Math.sqrt(2*Math.log(1/u1))*Math.cos(2*Math.PI*u2);
+    Math.sqrt(2*Math.log(1/u1))*Math.sin(2*Math.PI*u2);
+    #+end_src    
 */
 
